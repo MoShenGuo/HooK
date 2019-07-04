@@ -25,12 +25,12 @@
 + (void)load
 {
     
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-////        swizzleMethod([self class], @selector(viewDidAppear:), @selector(swizzled_viewDidAppear:));
-////        swizzleMethod([self class], @selector(viewDidDisappear:), @selector(swizzled_viewDidDisappear:));
-//        swizzleMethod([self class], @selector(viewWillAppear:), @selector(swizzled_viewWillAppear:));
-//    });
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+//        swizzleMethod([self class], @selector(viewDidAppear:), @selector(swizzled_viewDidAppear:));
+//        swizzleMethod([self class], @selector(viewDidDisappear:), @selector(swizzled_viewDidDisappear:));
+        swizzleMethod([self class], @selector(viewWillAppear:), @selector(swizzled_viewWillAppear:));
+    });
 //    RSSwizzleInstanceMethod([self class], @selector(viewDidAppear:), RSSWReturnType(void), RSSWArguments(BOOL animated), RSSWReplacement({
 //
 //        NSLog(@"swizzled_viewDidAppear");
@@ -45,12 +45,12 @@
 //
 //    }), RSSwizzleModeAlways, NULL);
 
-    RSSwizzleInstanceMethod([self class], @selector(viewWillAppear:), RSSWReturnType(void), RSSWArguments(BOOL animated), RSSWReplacement({
-
-         NSLog(@"swizzled_viewWillAppear");
-         RSSWCallOriginal(animated);
-
-    }), RSSwizzleModeAlways, NULL);
+//    RSSwizzleInstanceMethod([self class], @selector(viewWillAppear:), RSSWReturnType(void), RSSWArguments(BOOL animated), RSSWReplacement({
+//
+//         NSLog(@"swizzled_viewWillAppear");
+//         RSSWCallOriginal(animated);
+//
+//    }), RSSwizzleModeAlways, NULL);
 }
 + (void)toHookViewWillAppear:(Class)class {
     SEL originalSelector = @selector(viewWillAppear:);

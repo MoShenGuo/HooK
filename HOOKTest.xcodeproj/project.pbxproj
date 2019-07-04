@@ -17,8 +17,8 @@
 		739AEE4722CC66A700B4B9DC /* HOOKTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AEE4622CC66A700B4B9DC /* HOOKTestUITests.m */; };
 		739AEE5622CC66D900B4B9DC /* RSSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AEE5522CC66D800B4B9DC /* RSSwizzle.m */; };
 		739AEE5922CC66E000B4B9DC /* UIViewController+YJAOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 739AEE5822CC66E000B4B9DC /* UIViewController+YJAOP.m */; };
-		739AEE8622CDA30600B4B9DC /* MSAPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739AEE8422CDA2DA00B4B9DC /* MSAPM.framework */; };
-		739AEE8722CDA30600B4B9DC /* MSAPM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 739AEE8422CDA2DA00B4B9DC /* MSAPM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		739AEE8C22CDE1FB00B4B9DC /* MSAPM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739AEE8A22CDE1E900B4B9DC /* MSAPM.framework */; };
+		739AEE8D22CDE1FB00B4B9DC /* MSAPM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 739AEE8A22CDE1E900B4B9DC /* MSAPM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				739AEE8722CDA30600B4B9DC /* MSAPM.framework in Embed Frameworks */,
+				739AEE8D22CDE1FB00B4B9DC /* MSAPM.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +73,7 @@
 		739AEE5522CC66D800B4B9DC /* RSSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSwizzle.m; sourceTree = "<group>"; };
 		739AEE5722CC66E000B4B9DC /* UIViewController+YJAOP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YJAOP.h"; sourceTree = "<group>"; };
 		739AEE5822CC66E000B4B9DC /* UIViewController+YJAOP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YJAOP.m"; sourceTree = "<group>"; };
-		739AEE8422CDA2DA00B4B9DC /* MSAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MSAPM.framework; sourceTree = "<group>"; };
+		739AEE8A22CDE1E900B4B9DC /* MSAPM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MSAPM.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739AEE8622CDA30600B4B9DC /* MSAPM.framework in Frameworks */,
+				739AEE8C22CDE1FB00B4B9DC /* MSAPM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 		739AEE2122CC66A400B4B9DC /* HOOKTest */ = {
 			isa = PBXGroup;
 			children = (
-				739AEE8422CDA2DA00B4B9DC /* MSAPM.framework */,
+				739AEE8A22CDE1E900B4B9DC /* MSAPM.framework */,
 				739AEE5722CC66E000B4B9DC /* UIViewController+YJAOP.h */,
 				739AEE5822CC66E000B4B9DC /* UIViewController+YJAOP.m */,
 				739AEE5422CC66D800B4B9DC /* RSSwizzle.h */,
